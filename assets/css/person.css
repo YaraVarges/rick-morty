@@ -1,0 +1,145 @@
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8fc;
+}
+
+.Dead {
+    background-color: #f3904a  !important; 
+}
+
+.Alive {
+    background-color: #2fd3ad !important;
+}
+
+.unknown {
+    background-color: #f3904a !important;
+}
+
+.content {
+    padding: 1rem;
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+}
+
+.personagens {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.personagem {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: #38c2a2;
+    border-radius: 1rem;
+    
+}
+
+.personagem .species {
+    color: #000000;
+    opacity: 0.4;
+    text-align: right;
+    font-size: 0.980rem;
+}
+
+.personagem .name {
+    color: #fff;
+    margin: 0.25rem 0.25rem;
+    margin-left: 0;
+    padding-bottom: 0.50rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.personagem .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.personagem .details .types {
+    padding: 0;
+    margin: 0 ;
+    list-style: none;
+}
+
+.personagem .details .types .status {
+    background-color: #61e1ca;
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .3rem 0;
+    font-size: 1rem;
+    border-radius: 1rem;
+    text-align: left;
+    width: 250px;
+}
+
+.atrib {
+    color: #fff;
+    margin: 0.25rem 0.25rem;
+    margin-left: 0;
+    padding-bottom: 0.50rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.atributes {
+    margin-top: -2rem;
+    background-color:  #6c79db;
+   
+}
+
+img {
+    max-width: 100%;
+    height: 140px;
+    border-radius: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none ;
+    color: #fff;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button{
+    background-color: #6c79db ;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: #fff;
+    font-size: .850rem;
+}
+
+
+
+@media screen and (min-width: 480px) {
+    .content {
+        max-width: 480px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
